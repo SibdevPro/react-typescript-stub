@@ -14,4 +14,4 @@ COPY ./nginx/nginx.conf /etc/nginx/
 # COPY ./nginx/ssl/private.key /etc/ssl/private.key
 # COPY ./nginx/ssl/site.crt /etc/ssl/site.crt
 
-COPY --from=builder /app/dist /nginx/static
+COPY --from=builder /app/build /nginx/static
