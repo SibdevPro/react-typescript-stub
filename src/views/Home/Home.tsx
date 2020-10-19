@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { IDataResponse } from 'services/exampleService/types';
+import { IDataResponse } from 'services/exampleServices/types';
 import { setSimpleData } from 'store/simple/actions';
 import { getSimpleFirstState, getSimpleSecondState } from 'store/simple/getters';
 import useApi from 'services/hook/useApi';

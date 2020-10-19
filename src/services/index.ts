@@ -1,4 +1,4 @@
-import getSimpleData from './exampleService/getSimpleData';
-import sendSimpleData from './exampleService/sendSimpleData';
+import getSimpleData from './exampleServices/getSimpleData';
+import sendSimpleData from './exampleServices/sendSimpleData';
 
 export { getSimpleData, sendSimpleData };
