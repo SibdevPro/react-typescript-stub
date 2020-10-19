@@ -1,5 +1,7 @@
 import React from 'react';
 
-const Topics: React.FC = () => <div>Topics</div>;
+import styles from './Topics.module.scss';
+
+const Topics: React.FC = () => <div className={styles.about}>Topics</div>;
 
 export default Topics;
