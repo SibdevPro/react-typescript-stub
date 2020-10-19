@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { IDataResponse } from 'services/exampleServices/types';
 import { setSimpleData } from 'store/simple/actions';
 import { getSimpleFirstState, getSimpleSecondState } from 'store/simple/getters';
@@ -8,7 +9,7 @@ import useApi from 'services/hook/useApi';
 import Form from 'components/Form';
 import { IForm } from 'components/Form/Form';
 import { Paths } from 'router/constants';
-import { Link } from 'react-router-dom';
+
 import styles from './Home.module.scss';
 
 const Home: React.FC = () => {
@@ -32,7 +33,7 @@ const Home: React.FC = () => {
     dispatch(
       setSimpleData({
         exampleFirst: 'Hello, ',
-        exampleSecond: 'welcome to The React TS Boilerplate!',
+        exampleSecond: 'welcome to the React TS Boilerplate!',
       })
     );
   }, [dispatch]);
