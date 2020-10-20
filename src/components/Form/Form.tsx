@@ -24,8 +24,8 @@ const Form: React.FC<IProps> = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <input name="title" type="text" onChange={onChangeTitle} />
-      <textarea name="body" onChange={onChangeBody} />
+      <input name="title" type="text" onChange={onChangeTitle} required />
+      <textarea name="body" onChange={onChangeBody} required />
       <button type="submit">Асинхронное создание поста</button>
     </form>
   );
