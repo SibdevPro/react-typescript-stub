@@ -1,5 +1,7 @@
 import React from 'react';
 
-const About: React.FC = () => <div>About</div>;
+import styles from './About.module.scss';
+
+const About: React.FC = () => <div className={styles.about}>About</div>;
 
 export default About;
