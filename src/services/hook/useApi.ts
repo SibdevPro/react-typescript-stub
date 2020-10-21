@@ -23,6 +23,9 @@ interface IFullResponse<R> {
   error: ResponseError;
 }
 
+// Применять данный хук с осторожностью, предпочтительно это делать для простых и небольших приложений,
+// в случае с сложными приложениями, стоит более основательно задаться вопросом архитектуры
+
 const useApi = <R = unknown, T = object>(
   props: IProps
 ): [IFullResponse<R>, (data?: T, params?: string) => void] => {
