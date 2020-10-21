@@ -16,5 +16,5 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "include": ["src", "config", "scripts"]
+  "include": ["src", "scripts"]
 }
