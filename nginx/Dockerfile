@@ -1,9 +1,13 @@
-FROM node:11.10.1-alpine AS builder
+FROM node:14.17.0-alpine AS builder
+
 WORKDIR '/app'
+
 COPY package.json .
-RUN npm install
+COPY yarn.lock .
+
+RUN yarn install
 COPY . .
-RUN npm run build
+RUN yarn build
 
 FROM nginx
 

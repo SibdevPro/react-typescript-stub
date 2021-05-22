@@ -1,12 +1,15 @@
-version: '3'
+version: "3"
+
 services:
   web:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '3000:3000'
+      - "3000:3000"
     volumes:
-      - /app/node_modules
       - .:/app
-    command: ['npm', 'run', 'start']
+      - /app/node_modules
+    command: ["yarn", "start"]
+    tty: true
+    stdin_open: true

@@ -48,12 +48,12 @@ componentName="$(tr a-z A-Z <<< ${componentName:0:1})${componentName:1}"
 
 #Parse args
 if [ "$tsFlag" = true ]; then
-  tsType=": React.FC"
+  tsType=": FC"
   extension="ts"
 fi
 
 #fill templates with variables above
-ComponentTemplate=$"import React from 'react';\n\nimport styles from './$componentName.module.scss';\n\nconst
+ComponentTemplate=$"import { FC } from 'react';\n\nimport styles from './$componentName.module.scss';\n\nconst
 $componentName$tsType = () => {\n\treturn <div />;\n};\n\nexport default $componentName;"
 indexTemplate=$"import $componentName from './$componentName';\n\nexport default $componentName;"
 testTemplate=$"import React from 'react';\nimport ReactDOM from 'react-dom'\nimport $componentName from './$componentName'

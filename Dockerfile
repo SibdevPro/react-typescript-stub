@@ -1,9 +1,10 @@
-FROM node:11.10.1-alpine
+FROM node:14.17.0-alpine
 
 WORKDIR /app
 
 COPY package.json .
+COPY yarn.lock .
 
-RUN npm install
+RUN yarn install
 
 COPY . .
