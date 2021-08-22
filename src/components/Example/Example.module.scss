@@ -1,6 +1,6 @@
 $blue: rgb(19, 144, 229);
 
-.test {
+.example {
   position: relative;
   width: 100%;
   padding: 24px;
@@ -8,7 +8,7 @@ $blue: rgb(19, 144, 229);
   > h1 {
     color: $blue;
 
-    a {
+    > a {
       color: $blue;
       text-decoration: none;
 
@@ -20,5 +20,15 @@ $blue: rgb(19, 144, 229);
 
   > h2 {
     color: black;
+  }
+}
+
+.block {
+  margin-top: 16px;
+  font-size: 16px;
+
+  > ul {
+    margin: 4px 0;
+    padding-left: 24px;
   }
 }
