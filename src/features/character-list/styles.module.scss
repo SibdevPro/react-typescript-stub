@@ -1,0 +1,21 @@
+.list {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 24px;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  background-color: #888;
+  display: block;
+  border-radius: 4px;
+}

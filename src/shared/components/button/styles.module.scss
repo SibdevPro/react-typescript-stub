@@ -1,0 +1,29 @@
+.button {
+  text-decoration: none;
+  font-size: 16px;
+  height: 40px;
+  padding: 0 24px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition);
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    background-color: var(--blue-dark);
+  }
+
+  &:active {
+    background-color: var(--blue-light);
+  }
+}
