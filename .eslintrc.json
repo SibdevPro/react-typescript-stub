@@ -1,10 +1,5 @@
 {
-  "extends": [
-    "react-app",
-    "react-app/jest",
-    "plugin:prettier/recommended",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["react-app", "react-app/jest", "plugin:prettier/recommended"],
   "plugins": ["prettier"],
   "settings": {
     "import/resolver": {
@@ -33,13 +28,7 @@
           "caseInsensitive": true,
           "order": "asc"
         },
-        "groups": [
-          ["builtin", "external"],
-          "internal",
-          "parent",
-          "sibling",
-          "index"
-        ],
+        "groups": [["builtin", "external"], "internal", "parent", "sibling", "index"],
         "newlines-between": "always"
       }
     ],

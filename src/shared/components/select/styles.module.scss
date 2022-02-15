@@ -1,0 +1,14 @@
+.select {
+  font-size: 16px;
+  height: 40px;
+  padding: 0 16px;
+  color: black;
+  border: 1px solid var(--blue);
+  border-radius: 4px;
+  transition: border-color var(--transition);
+  outline-color: var(--blue-dark);
+
+  &:hover {
+    border-color: var(--blue-dark);
+  }
+}

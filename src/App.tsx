@@ -1,8 +1,7 @@
-import { FC } from 'react';
-
 import { Router } from './router';
+import './styles/index.scss';
 
-const App: FC = () => {
+const App: React.VFC = () => {
   return <Router />;
 };
 
