@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import styles from './styles.module.scss';
 import { SelectProps } from './types';
 
-const Select: React.VFC<SelectProps> = (props) => {
+const Select: React.FC<SelectProps> = (props) => {
   const { options, className, ...rest } = props;
 
   return (

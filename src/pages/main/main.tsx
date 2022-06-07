@@ -5,9 +5,9 @@ import { CharacterList } from 'src/features';
 import { Button, Select } from 'src/shared/components';
 import { HOGWARTS_HOUSES, HOGWARTS_HOUSE_OPTIONS } from 'src/shared/constants';
 
-import styles from './main.module.scss';
+import styles from './styles.module.scss';
 
-const MainPage: React.VFC = () => {
+const MainPage: React.FC = () => {
   const [house, setHouse] = useState(HOGWARTS_HOUSES.gryffindor);
   const [characters, setCharacters] = useState<Character[]>([]);
 
