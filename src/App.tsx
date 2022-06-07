@@ -1,7 +1,7 @@
 import { Router } from './router';
 import './styles/index.scss';
 
-const App: React.VFC = () => {
+const App: React.FC = () => {
   return <Router />;
 };
 

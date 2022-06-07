@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { MainPage } from 'src/pages';
 import { ROUTES } from 'src/shared/constants';
 
-const Router: React.VFC = () => {
+const Router: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>

@@ -2,7 +2,7 @@ import CharacterItem from './character-item';
 import styles from './styles.module.scss';
 import { CharacterListProps } from './types';
 
-const CharacterList: React.VFC<CharacterListProps> = (props) => {
+const CharacterList: React.FC<CharacterListProps> = (props) => {
   const { characters } = props;
 
   return (

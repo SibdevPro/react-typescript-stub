@@ -1,7 +1,7 @@
 import styles from './styles.module.scss';
 import { CharacterItemProps } from './types';
 
-const CharacterItem: React.VFC<CharacterItemProps> = (props) => {
+const CharacterItem: React.FC<CharacterItemProps> = (props) => {
   const { character } = props;
 
   return (
